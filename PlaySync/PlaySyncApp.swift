@@ -11,7 +11,9 @@ import SwiftUI
 struct PlaySyncApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			NavigationStack {
+				ContentBrowser()
+			}
         }
     }
 }

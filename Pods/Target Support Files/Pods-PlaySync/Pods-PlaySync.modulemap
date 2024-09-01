@@ -1,0 +1,6 @@
+framework module Pods_PlaySync {
+  umbrella header "Pods-PlaySync-umbrella.h"
+
+  export *
+  module * { export * }
+}

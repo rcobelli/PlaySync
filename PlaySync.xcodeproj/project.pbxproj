@@ -7,43 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48AABD9D320035BE4589A75E /* Pods_PlaySync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161752EE597EE97850F8C834 /* Pods_PlaySync.framework */; };
 		940E4E042C827ACD00500ED1 /* PlaySyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E4E032C827ACD00500ED1 /* PlaySyncApp.swift */; };
-		940E4E062C827ACD00500ED1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E4E052C827ACD00500ED1 /* ContentView.swift */; };
+		940E4E062C827ACD00500ED1 /* ContentBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E4E052C827ACD00500ED1 /* ContentBrowser.swift */; };
 		940E4E082C827AD000500ED1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940E4E072C827AD000500ED1 /* Assets.xcassets */; };
 		940E4E0B2C827AD000500ED1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940E4E0A2C827AD000500ED1 /* Preview Assets.xcassets */; };
-		940E4E152C827AD000500ED1 /* PlaySyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E4E142C827AD000500ED1 /* PlaySyncTests.swift */; };
-		940E4E1F2C827AD000500ED1 /* PlaySyncUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E4E1E2C827AD000500ED1 /* PlaySyncUITests.swift */; };
-		940E4E212C827AD000500ED1 /* PlaySyncUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E4E202C827AD000500ED1 /* PlaySyncUITestsLaunchTests.swift */; };
+		940E4E2E2C827E8900500ED1 /* HeroHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E4E2D2C827E8900500ED1 /* HeroHeaderView.swift */; };
+		940E4E322C827F0500500ED1 /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E4E312C827F0500500ED1 /* Asset.swift */; };
+		940E4E342C8282C400500ED1 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E4E332C8282C400500ED1 /* APIManager.swift */; };
+		940E4E362C82978300500ED1 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E4E352C82978300500ED1 /* PlayerView.swift */; };
+		940E4E382C83986F00500ED1 /* ThumbnailGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940E4E372C83986F00500ED1 /* ThumbnailGenerator.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		940E4E112C827AD000500ED1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 940E4DF82C827ACD00500ED1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 940E4DFF2C827ACD00500ED1;
-			remoteInfo = PlaySync;
-		};
-		940E4E1B2C827AD000500ED1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 940E4DF82C827ACD00500ED1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 940E4DFF2C827ACD00500ED1;
-			remoteInfo = PlaySync;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		161752EE597EE97850F8C834 /* Pods_PlaySync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaySync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39CF85B5AB89187B680C45EA /* Pods-PlaySyncTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaySyncTests.release.xcconfig"; path = "Target Support Files/Pods-PlaySyncTests/Pods-PlaySyncTests.release.xcconfig"; sourceTree = "<group>"; };
+		6EA590A1E8F9572C8C4F3F5A /* Pods-PlaySync.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaySync.release.xcconfig"; path = "Target Support Files/Pods-PlaySync/Pods-PlaySync.release.xcconfig"; sourceTree = "<group>"; };
+		7BDF25750A2290763D581A96 /* Pods-PlaySync-PlaySyncUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaySync-PlaySyncUITests.release.xcconfig"; path = "Target Support Files/Pods-PlaySync-PlaySyncUITests/Pods-PlaySync-PlaySyncUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8953754CCDEFD52E86EC2005 /* Pods_PlaySyncTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaySyncTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		940E4E002C827ACD00500ED1 /* PlaySync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaySync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		940E4E032C827ACD00500ED1 /* PlaySyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySyncApp.swift; sourceTree = "<group>"; };
-		940E4E052C827ACD00500ED1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		940E4E052C827ACD00500ED1 /* ContentBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBrowser.swift; sourceTree = "<group>"; };
 		940E4E072C827AD000500ED1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		940E4E0A2C827AD000500ED1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		940E4E102C827AD000500ED1 /* PlaySyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaySyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		940E4E142C827AD000500ED1 /* PlaySyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySyncTests.swift; sourceTree = "<group>"; };
-		940E4E1A2C827AD000500ED1 /* PlaySyncUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaySyncUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		940E4E1E2C827AD000500ED1 /* PlaySyncUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySyncUITests.swift; sourceTree = "<group>"; };
-		940E4E202C827AD000500ED1 /* PlaySyncUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySyncUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		940E4E2D2C827E8900500ED1 /* HeroHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroHeaderView.swift; sourceTree = "<group>"; };
+		940E4E312C827F0500500ED1 /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
+		940E4E332C8282C400500ED1 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		940E4E352C82978300500ED1 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		940E4E372C83986F00500ED1 /* ThumbnailGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailGenerator.swift; sourceTree = "<group>"; };
+		AA6024D5DA29F97DBDA4E8B6 /* Pods-PlaySync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaySync.debug.xcconfig"; path = "Target Support Files/Pods-PlaySync/Pods-PlaySync.debug.xcconfig"; sourceTree = "<group>"; };
+		CE3DADCCC46DBD7F7BA38AF6 /* Pods-PlaySyncTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaySyncTests.debug.xcconfig"; path = "Target Support Files/Pods-PlaySyncTests/Pods-PlaySyncTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC31BCFECA3EE6747AB32542 /* Pods_PlaySync_PlaySyncUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaySync_PlaySyncUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE8D23DBC40DD886EB5CA64 /* Pods-PlaySync-PlaySyncUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaySync-PlaySyncUITests.debug.xcconfig"; path = "Target Support Files/Pods-PlaySync-PlaySyncUITests/Pods-PlaySync-PlaySyncUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,20 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		940E4E0D2C827AD000500ED1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		940E4E172C827AD000500ED1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				48AABD9D320035BE4589A75E /* Pods_PlaySync.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				940E4E022C827ACD00500ED1 /* PlaySync */,
-				940E4E132C827AD000500ED1 /* PlaySyncTests */,
-				940E4E1D2C827AD000500ED1 /* PlaySyncUITests */,
 				940E4E012C827ACD00500ED1 /* Products */,
+				B0B17A3D222738CED9BA7762 /* Pods */,
+				CAFEDE1BF14D6AC3C532C560 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,8 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				940E4E002C827ACD00500ED1 /* PlaySync.app */,
-				940E4E102C827AD000500ED1 /* PlaySyncTests.xctest */,
-				940E4E1A2C827AD000500ED1 /* PlaySyncUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,7 +75,12 @@
 			isa = PBXGroup;
 			children = (
 				940E4E032C827ACD00500ED1 /* PlaySyncApp.swift */,
-				940E4E052C827ACD00500ED1 /* ContentView.swift */,
+				940E4E052C827ACD00500ED1 /* ContentBrowser.swift */,
+				940E4E332C8282C400500ED1 /* APIManager.swift */,
+				940E4E2D2C827E8900500ED1 /* HeroHeaderView.swift */,
+				940E4E312C827F0500500ED1 /* Asset.swift */,
+				940E4E352C82978300500ED1 /* PlayerView.swift */,
+				940E4E372C83986F00500ED1 /* ThumbnailGenerator.swift */,
 				940E4E072C827AD000500ED1 /* Assets.xcassets */,
 				940E4E092C827AD000500ED1 /* Preview Content */,
 			);
@@ -110,21 +95,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		940E4E132C827AD000500ED1 /* PlaySyncTests */ = {
+		B0B17A3D222738CED9BA7762 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				940E4E142C827AD000500ED1 /* PlaySyncTests.swift */,
+				AA6024D5DA29F97DBDA4E8B6 /* Pods-PlaySync.debug.xcconfig */,
+				6EA590A1E8F9572C8C4F3F5A /* Pods-PlaySync.release.xcconfig */,
+				FBE8D23DBC40DD886EB5CA64 /* Pods-PlaySync-PlaySyncUITests.debug.xcconfig */,
+				7BDF25750A2290763D581A96 /* Pods-PlaySync-PlaySyncUITests.release.xcconfig */,
+				CE3DADCCC46DBD7F7BA38AF6 /* Pods-PlaySyncTests.debug.xcconfig */,
+				39CF85B5AB89187B680C45EA /* Pods-PlaySyncTests.release.xcconfig */,
 			);
-			path = PlaySyncTests;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		940E4E1D2C827AD000500ED1 /* PlaySyncUITests */ = {
+		CAFEDE1BF14D6AC3C532C560 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				940E4E1E2C827AD000500ED1 /* PlaySyncUITests.swift */,
-				940E4E202C827AD000500ED1 /* PlaySyncUITestsLaunchTests.swift */,
+				161752EE597EE97850F8C834 /* Pods_PlaySync.framework */,
+				DC31BCFECA3EE6747AB32542 /* Pods_PlaySync_PlaySyncUITests.framework */,
+				8953754CCDEFD52E86EC2005 /* Pods_PlaySyncTests.framework */,
 			);
-			path = PlaySyncUITests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 940E4E242C827AD000500ED1 /* Build configuration list for PBXNativeTarget "PlaySync" */;
 			buildPhases = (
+				8BCA205DC6F3805DB202297F /* [CP] Check Pods Manifest.lock */,
 				940E4DFC2C827ACD00500ED1 /* Sources */,
 				940E4DFD2C827ACD00500ED1 /* Frameworks */,
 				940E4DFE2C827ACD00500ED1 /* Resources */,
+				9E7113C9C2B33EDBC4551BCE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,42 +139,6 @@
 			productName = PlaySync;
 			productReference = 940E4E002C827ACD00500ED1 /* PlaySync.app */;
 			productType = "com.apple.product-type.application";
-		};
-		940E4E0F2C827AD000500ED1 /* PlaySyncTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 940E4E272C827AD000500ED1 /* Build configuration list for PBXNativeTarget "PlaySyncTests" */;
-			buildPhases = (
-				940E4E0C2C827AD000500ED1 /* Sources */,
-				940E4E0D2C827AD000500ED1 /* Frameworks */,
-				940E4E0E2C827AD000500ED1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				940E4E122C827AD000500ED1 /* PBXTargetDependency */,
-			);
-			name = PlaySyncTests;
-			productName = PlaySyncTests;
-			productReference = 940E4E102C827AD000500ED1 /* PlaySyncTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		940E4E192C827AD000500ED1 /* PlaySyncUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 940E4E2A2C827AD000500ED1 /* Build configuration list for PBXNativeTarget "PlaySyncUITests" */;
-			buildPhases = (
-				940E4E162C827AD000500ED1 /* Sources */,
-				940E4E172C827AD000500ED1 /* Frameworks */,
-				940E4E182C827AD000500ED1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				940E4E1C2C827AD000500ED1 /* PBXTargetDependency */,
-			);
-			name = PlaySyncUITests;
-			productName = PlaySyncUITests;
-			productReference = 940E4E1A2C827AD000500ED1 /* PlaySyncUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -195,14 +152,6 @@
 				TargetAttributes = {
 					940E4DFF2C827ACD00500ED1 = {
 						CreatedOnToolsVersion = 15.4;
-					};
-					940E4E0F2C827AD000500ED1 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 940E4DFF2C827ACD00500ED1;
-					};
-					940E4E192C827AD000500ED1 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 940E4DFF2C827ACD00500ED1;
 					};
 				};
 			};
@@ -220,8 +169,6 @@
 			projectRoot = "";
 			targets = (
 				940E4DFF2C827ACD00500ED1 /* PlaySync */,
-				940E4E0F2C827AD000500ED1 /* PlaySyncTests */,
-				940E4E192C827AD000500ED1 /* PlaySyncUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,63 +183,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		940E4E0E2C827AD000500ED1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		940E4E182C827AD000500ED1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BCA205DC6F3805DB202297F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlaySync-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E7113C9C2B33EDBC4551BCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlaySync/Pods-PlaySync-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlaySync/Pods-PlaySync-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlaySync/Pods-PlaySync-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		940E4DFC2C827ACD00500ED1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				940E4E062C827ACD00500ED1 /* ContentView.swift in Sources */,
+				940E4E342C8282C400500ED1 /* APIManager.swift in Sources */,
+				940E4E382C83986F00500ED1 /* ThumbnailGenerator.swift in Sources */,
+				940E4E062C827ACD00500ED1 /* ContentBrowser.swift in Sources */,
+				940E4E362C82978300500ED1 /* PlayerView.swift in Sources */,
+				940E4E322C827F0500500ED1 /* Asset.swift in Sources */,
+				940E4E2E2C827E8900500ED1 /* HeroHeaderView.swift in Sources */,
 				940E4E042C827ACD00500ED1 /* PlaySyncApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		940E4E0C2C827AD000500ED1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				940E4E152C827AD000500ED1 /* PlaySyncTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		940E4E162C827AD000500ED1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				940E4E212C827AD000500ED1 /* PlaySyncUITestsLaunchTests.swift in Sources */,
-				940E4E1F2C827AD000500ED1 /* PlaySyncUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		940E4E122C827AD000500ED1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 940E4DFF2C827ACD00500ED1 /* PlaySync */;
-			targetProxy = 940E4E112C827AD000500ED1 /* PBXContainerItemProxy */;
-		};
-		940E4E1C2C827AD000500ED1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 940E4DFF2C827ACD00500ED1 /* PlaySync */;
-			targetProxy = 940E4E1B2C827AD000500ED1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		940E4E222C827AD000500ED1 /* Debug */ = {
@@ -347,6 +297,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -404,6 +355,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -416,24 +368,30 @@
 		};
 		940E4E252C827AD000500ED1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA6024D5DA29F97DBDA4E8B6 /* Pods-PlaySync.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10000;
 				DEVELOPMENT_ASSET_PATHS = "\"PlaySync/Preview Content\"";
 				DEVELOPMENT_TEAM = AL6H9GEC6N;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Play Sync";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.PlaySync";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -442,103 +400,33 @@
 		};
 		940E4E262C827AD000500ED1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EA590A1E8F9572C8C4F3F5A /* Pods-PlaySync.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 10000;
 				DEVELOPMENT_ASSET_PATHS = "\"PlaySync/Preview Content\"";
 				DEVELOPMENT_TEAM = AL6H9GEC6N;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Play Sync";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.PlaySync";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-			};
-			name = Release;
-		};
-		940E4E282C827AD000500ED1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AL6H9GEC6N;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.PlaySyncTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlaySync.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlaySync";
-				TVOS_DEPLOYMENT_TARGET = 17.5;
-			};
-			name = Debug;
-		};
-		940E4E292C827AD000500ED1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AL6H9GEC6N;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.PlaySyncTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlaySync.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlaySync";
-				TVOS_DEPLOYMENT_TARGET = 17.5;
-			};
-			name = Release;
-		};
-		940E4E2B2C827AD000500ED1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AL6H9GEC6N;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.PlaySyncUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TEST_TARGET_NAME = PlaySync;
-			};
-			name = Debug;
-		};
-		940E4E2C2C827AD000500ED1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AL6H9GEC6N;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rybel-llc.PlaySyncUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-				TEST_TARGET_NAME = PlaySync;
 			};
 			name = Release;
 		};
@@ -559,24 +447,6 @@
 			buildConfigurations = (
 				940E4E252C827AD000500ED1 /* Debug */,
 				940E4E262C827AD000500ED1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		940E4E272C827AD000500ED1 /* Build configuration list for PBXNativeTarget "PlaySyncTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				940E4E282C827AD000500ED1 /* Debug */,
-				940E4E292C827AD000500ED1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		940E4E2A2C827AD000500ED1 /* Build configuration list for PBXNativeTarget "PlaySyncUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				940E4E2B2C827AD000500ED1 /* Debug */,
-				940E4E2C2C827AD000500ED1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
