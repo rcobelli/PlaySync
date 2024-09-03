@@ -11,6 +11,7 @@ struct ContentBrowser: View {
 	private var showcaseHeight: CGFloat = 800
 	@State var channels: [Channel] = []
 	@State var selectedChannels: [Channel] = []
+	@State var categoriesSet: Set<String> = []
 	@FocusState var startPlaybackFocused
 	
 	var body: some View {
@@ -41,34 +42,40 @@ struct ContentBrowser: View {
 				}
 				
 				ScrollView(.vertical) {
-					LazyVStack(alignment: .leading, spacing: 40) {
-						ForEach(channels) { ch in
-							Button(action: {
-								if selectedChannels.contains(ch) {
-									selectedChannels.remove(at: selectedChannels.firstIndex(of: ch)!)
-								} else {
-									selectedChannels.insert(ch, at: 0)
-								}
-								
-								startPlaybackFocused = selectedChannels.count == 4
-							}, label: {
-								HStack {
-									ThumbnailGenerator(broadcaster: ch.broadcaster, categories: ch.categories, selected: selectedChannels.contains(ch)).hoverEffect(.highlight).frame(maxWidth:350)
-									VStack(alignment: .leading) {
-										Text(ch.title)
-											.font(.body)
-										Spacer()
-										Text(ch.categories.joined(separator: ", ")).font(.caption2)
+					LazyVStack(alignment: .leading) {
+						ForEach(categoriesSet.sorted(), id: \.self) { cat in
+							Text(cat).font(.title3)
+							ScrollView(.horizontal) {
+								LazyHStack(spacing: 40) {
+									ForEach(channels.filter({ channel in channel.categories.joined().contains(cat)})) { ch in
+										Button(action: {
+											if selectedChannels.contains(ch) {
+												selectedChannels.remove(at: selectedChannels.firstIndex(of: ch)!)
+											} else {
+												selectedChannels.insert(ch, at: 0)
+											}
+											
+											startPlaybackFocused = selectedChannels.count == 4
+										}, label: {
+											VStack {
+												ThumbnailGenerator(broadcaster: ch.broadcaster, categories: ch.categories, selected: selectedChannels.contains(ch)).hoverEffect(.highlight).frame(maxWidth:350)
+												Text(ch.title)
+													.font(.body)
+													.lineLimit(2)
+												Spacer()
+												Text(ch.categories.joined(separator: ", ")).font(.caption2)
+											}
+										})
+										.buttonStyle(.borderless)
+										.frame(maxWidth: 375)
 									}
 								}
-							})
+								.scrollClipDisabled()
+							}
 						}
 					}
 					.scrollClipDisabled()
-					.buttonStyle(.borderless)
-					
 				}
-				.scrollTargetLayout()
 			}
 			.background(alignment: .top) {
 				HeroHeaderView()
@@ -84,8 +91,16 @@ extension ContentBrowser
 {
 	func loadData() {
 		selectedChannels = []
+		categoriesSet = []
 		APIManager.shared.getChannels(success: { channels in
 			self.channels = channels
+			
+			let _ = channels.map({ ch in
+				ch.categories.map({ cat in
+					categoriesSet.insert(cat)
+				})
+			})
+			
 		}, failure: { reason in
 			print(reason)
 		})

@@ -25,7 +25,12 @@ public class APIManager {
 		"NCAA",
 		"LALIGA",
 		"Eredivisie",
-		"Bundesliga"
+		"Bundesliga",
+		"Premier Lacrosse League",
+		"PLL",
+		"Fuera de Juego",
+		"MLB",
+		"US Open"
 	]
 	
 	func getChannels(success: @escaping (([Channel]) -> Void), failure: @escaping ((FailureMessage) -> Void)) {
@@ -38,7 +43,7 @@ public class APIManager {
 					let channels = try self.parseXml(xml: xml)
 					
 					success(channels.filter({ ch in
-						!ch.title.contains("En Español") && !ch.categories.joined().contains("Tennis") && !ch.categories.joined().contains("Volleyball")
+						!ch.title.contains("En Español")
 					}))
 				} catch {
 					print(error)
@@ -55,7 +60,7 @@ public class APIManager {
 			let channelString: String = try elem.value(ofAttribute: "channel")
 			let channelNumString = channelString.split(separator: ".")[0]
 			
-			let categories = elem["category"].all.map { cat in
+			var categories = elem["category"].all.map { cat in
 				cat.element!.text
 			}
 			
@@ -79,7 +84,19 @@ public class APIManager {
 				return nil
 			}
 			
-			let filteredCategories = categories.filter({ cat in
+			categories = categories.map({ cat in
+				if cat == "English Football League" {
+					return "Soccer"
+				} else if cat == "Argentina Liga Profesional de Fútbol" {
+					return "Soccer"
+				} else if cat == "Others" {
+					return "Other"
+				}
+				
+				return cat
+			})
+			
+			categories = categories.filter({ cat in
 				for search in categoriesToRemove {
 					if cat.contains(search) {
 						return false
@@ -88,10 +105,14 @@ public class APIManager {
 				return true
 			})
 			
+			if categories.count == 0 {
+				categories = ["Other"]
+			}
+			
 			return Channel(channelNum: Int(channelNumString)!,
 						   title: elem["title"].element!.text,
 						   broadcaster: broadcaster,
-						   categories: filteredCategories)
+						   categories: categories)
 		}
 	}
 }

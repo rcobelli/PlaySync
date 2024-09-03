@@ -102,7 +102,7 @@ struct PlayerView: View {
 				
 				Button(action: {
 					channel4FullScreen = true
-					DispatchQueue.main.asyncAfter(deadline: .now() + 0.75, execute: {
+					DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
 						player4.isMuted = false
 					})
 				}) {

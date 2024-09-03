@@ -41,7 +41,7 @@ struct ThumbnailGenerator: View {
 		}
 		
 		
-		if categories.joined().contains("Serie") || categories.joined().contains("Soccer")  || categories.joined().contains("English Football League") {
+		if categories.joined().contains("Serie") || categories.joined().contains("Soccer") {
 			icon = Image(systemName: "soccerball")
 		} else if categories.joined().contains("Football") {
 			icon = Image(systemName: "football")
@@ -59,8 +59,14 @@ struct ThumbnailGenerator: View {
 			icon = Image(systemName: "baseball")
 		} else if categories.joined().contains("Sailing") {
 			icon = Image(systemName: "sailboat")
+		} else if categories.joined().contains("Tennis") {
+			icon = Image(systemName: "tennis.racket")
+		} else if categories.joined().contains("Volleyball") {
+			icon = Image(systemName: "volleyball")
 		} else if categories.joined().contains("Dogs") {
 			icon = Image(systemName: "dog")
+		} else if categories.joined().contains("Lacrosse") {
+			icon = Image(systemName: "figure.lacrosse")
 		} else {
 			icon = Image(systemName: "sportscourt")
 		}
