@@ -63,7 +63,7 @@ struct ContentBrowser: View {
 													.font(.body)
 													.lineLimit(2)
 												Spacer()
-												Text(ch.categories.joined(separator: ", ")).font(.caption2)
+												Text(ch.categories.filter({ c in c != cat}).joined(separator: ", ")).font(.caption2)
 											}
 										})
 										.buttonStyle(.borderless)

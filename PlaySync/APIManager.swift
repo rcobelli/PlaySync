@@ -23,6 +23,7 @@ public class APIManager {
 		"Competition",
 		"Paramount+",
 		"NCAA",
+		"NJCAA",
 		"LALIGA",
 		"Eredivisie",
 		"Bundesliga",
@@ -30,7 +31,10 @@ public class APIManager {
 		"PLL",
 		"Fuera de Juego",
 		"MLB",
-		"US Open"
+		"US Open",
+		"NHL",
+		"American Cornhole League",
+		"UFC"
 	]
 	
 	func getChannels(success: @escaping (([Channel]) -> Void), failure: @escaping ((FailureMessage) -> Void)) {
@@ -88,6 +92,8 @@ public class APIManager {
 				if cat == "English Football League" {
 					return "Soccer"
 				} else if cat == "Argentina Liga Profesional de Fútbol" {
+					return "Soccer"
+				} else if cat.contains("USL ") {
 					return "Soccer"
 				} else if cat == "Others" {
 					return "Other"

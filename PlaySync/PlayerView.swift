@@ -32,7 +32,7 @@ struct PlayerView: View {
 			GridRow {
 				Button(action: {
 					channel1FullScreen = true
-					DispatchQueue.main.asyncAfter(deadline: .now() + 0.75, execute: {
+					DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
 						player1.isMuted = false
 					})
 				}) {
@@ -55,7 +55,7 @@ struct PlayerView: View {
 				
 				Button(action: {
 					channel2FullScreen = true
-					DispatchQueue.main.asyncAfter(deadline: .now() + 0.75, execute: {
+					DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
 						player2.isMuted = false
 					})
 				}) {
@@ -79,7 +79,7 @@ struct PlayerView: View {
 			GridRow {
 				Button(action: {
 					channel3FullScreen = true
-					DispatchQueue.main.asyncAfter(deadline: .now() + 0.75, execute: {
+					DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
 						player3.isMuted = false
 					})
 				}) {

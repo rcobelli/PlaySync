@@ -48,7 +48,7 @@ struct ThumbnailGenerator: View {
 		} else if categories.joined().contains("Auto racing") || categories.joined().contains("F1") {
 			icon = Image(systemName: "car.side")
 		} else if categories.joined().contains("Race") || categories.joined().contains("racing") {
-			icon = Image(systemName: "medal")
+			icon = Image(systemName: "flag.checkered")
 		} else if categories.joined().contains("Rugby") {
 			icon = Image(systemName: "figure.rugby")
 		} else if categories.joined().contains("Golf") {
@@ -67,6 +67,14 @@ struct ThumbnailGenerator: View {
 			icon = Image(systemName: "dog")
 		} else if categories.joined().contains("Lacrosse") {
 			icon = Image(systemName: "figure.lacrosse")
+		} else if categories.joined().contains("Cornhole") {
+			icon = Image(systemName: "figure.martial.arts")
+		} else if categories.joined().contains("Hockey") {
+			icon = Image(systemName: "hocky.pusk.fill")
+		} else if categories.joined().contains("MMA") {
+			icon = Image(systemName: "figure.kickboxing")
+		} else if categories.joined().contains("Water Polo") {
+			icon = Image(systemName: "figure.waterpolo")
 		} else {
 			icon = Image(systemName: "sportscourt")
 		}
