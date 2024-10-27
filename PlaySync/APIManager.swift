@@ -39,7 +39,7 @@ public class APIManager {
 	
 	func getChannels(success: @escaping (([Channel]) -> Void), failure: @escaping ((FailureMessage) -> Void)) {
 		
-		AF.request("http://10.0.0.136:8000/xmltv.xml", method:.get).response { response in
+		AF.request("http://10.0.0.4:8000/xmltv.xml", method:.get).response { response in
 			switch response.result {
 			case .success:
 				do {
