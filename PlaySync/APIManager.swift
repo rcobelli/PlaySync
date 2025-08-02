@@ -28,13 +28,22 @@ public class APIManager {
 		"Eredivisie",
 		"Bundesliga",
 		"Premier Lacrosse League",
+		"FIBA Basketball Champions League",
+		"PGA TOUR",
 		"PLL",
 		"Fuera de Juego",
 		"MLB",
 		"US Open",
 		"NHL",
 		"American Cornhole League",
-		"UFC"
+		"UFC",
+		"E+TV",
+		"First Take",
+		"Get Up!",
+		"Joe & Q",
+		"The Pat McAfee Show",
+		"30 for 30",
+		"EPlusTV"
 	]
 	
 	func getChannels(success: @escaping (([Channel]) -> Void), failure: @escaping ((FailureMessage) -> Void)) {

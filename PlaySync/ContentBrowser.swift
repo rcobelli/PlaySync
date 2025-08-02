@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentBrowser: View {
 	private var showcaseHeight: CGFloat = 800
 	@State var channels: [Channel] = []
-	@State var selectedChannels: [Channel] = []
+	@State var selectedChannels: [Channel?] = [nil, nil, nil, nil]
 	@State var categoriesSet: Set<String> = []
 	@FocusState var startPlaybackFocused
 	
@@ -39,7 +39,7 @@ struct ContentBrowser: View {
 							)
 						}
 						.focused($startPlaybackFocused)
-				}
+				}.zIndex(1000)
 				
 				ScrollView(.vertical) {
 					LazyVStack(alignment: .leading) {

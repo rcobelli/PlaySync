@@ -17,10 +17,10 @@ struct PlayerView: View {
 	@FocusState private var focusedPlayer2: Bool
 	@FocusState private var focusedPlayer3: Bool
 	@FocusState private var focusedPlayer4: Bool
-	@State var channel1 : Channel
-	@State var channel2 : Channel
-	@State var channel3 : Channel
-	@State var channel4 : Channel
+	@State var channel1 : Channel?
+	@State var channel2 : Channel?
+	@State var channel3 : Channel?
+	@State var channel4 : Channel?
 	@State private var labelsVisible = true
 	@State private var channel1FullScreen = false
 	@State private var channel2FullScreen = false
@@ -37,7 +37,7 @@ struct PlayerView: View {
 					})
 				}) {
 					if labelsVisible {
-						Text(channel1.title)
+						Text(channel1?.title ?? "Empty")
 					}
 					VideoPlayer(player: player1)
 				}
@@ -60,7 +60,7 @@ struct PlayerView: View {
 					})
 				}) {
 					if labelsVisible {
-						Text(channel2.title)
+						Text(channel2?.title ?? "Empty")
 					}
 					VideoPlayer(player: player2)
 				}
@@ -84,7 +84,7 @@ struct PlayerView: View {
 					})
 				}) {
 					if labelsVisible {
-						Text(channel3.title)
+						Text(channel3?.title ?? "Empty")
 					}
 					VideoPlayer(player: player3)
 				}
@@ -107,7 +107,7 @@ struct PlayerView: View {
 					})
 				}) {
 					if labelsVisible {
-						Text(channel4.title)
+						Text(channel4?.title ?? "Empty")
 					}
 					VideoPlayer(player: player4)
 				}
@@ -127,10 +127,10 @@ struct PlayerView: View {
 		.onAppear {
 			UIApplication.shared.isIdleTimerDisabled = true
 			
-			player1.replaceCurrentItem(with: AVPlayerItem(url: URL(string: "http://10.0.0.4:8000/channels/\(channel1.channelNum).m3u8")!))
-			player2.replaceCurrentItem(with: AVPlayerItem(url: URL(string: "http://10.0.0.4:8000/channels/\(channel2.channelNum).m3u8")!))
-			player3.replaceCurrentItem(with: AVPlayerItem(url: URL(string: "http://10.0.0.4:8000/channels/\(channel3.channelNum).m3u8")!))
-			player4.replaceCurrentItem(with: AVPlayerItem(url: URL(string: "http://10.0.0.4:8000/channels/\(channel4.channelNum).m3u8")!))
+			player1.replaceCurrentItem(with: AVPlayerItem(url: URL(string: "http://10.0.0.4:8000/channels/\(channel1?.channelNum ?? 0).m3u8")!))
+			player2.replaceCurrentItem(with: AVPlayerItem(url: URL(string: "http://10.0.0.4:8000/channels/\(channel2?.channelNum ?? 0).m3u8")!))
+			player3.replaceCurrentItem(with: AVPlayerItem(url: URL(string: "http://10.0.0.4:8000/channels/\(channel3?.channelNum ?? 0).m3u8")!))
+			player4.replaceCurrentItem(with: AVPlayerItem(url: URL(string: "http://10.0.0.4:8000/channels/\(channel4?.channelNum ?? 0).m3u8")!))
 			
 			player1.isMuted = true
 			player2.isMuted = true
