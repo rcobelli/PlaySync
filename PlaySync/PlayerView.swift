@@ -126,11 +126,12 @@ struct PlayerView: View {
 		}
 		.onAppear {
 			UIApplication.shared.isIdleTimerDisabled = true
+            let ip = UserDefaults.standard.string(forKey: "userIP") ?? "10.0.0.4"
 			
-			player1.replaceCurrentItem(with: AVPlayerItem(url: URL(string: "http://10.0.0.4:8000/channels/\(channel1?.channelNum ?? 0).m3u8")!))
-			player2.replaceCurrentItem(with: AVPlayerItem(url: URL(string: "http://10.0.0.4:8000/channels/\(channel2?.channelNum ?? 0).m3u8")!))
-			player3.replaceCurrentItem(with: AVPlayerItem(url: URL(string: "http://10.0.0.4:8000/channels/\(channel3?.channelNum ?? 0).m3u8")!))
-			player4.replaceCurrentItem(with: AVPlayerItem(url: URL(string: "http://10.0.0.4:8000/channels/\(channel4?.channelNum ?? 0).m3u8")!))
+			player1.replaceCurrentItem(with: AVPlayerItem(url: URL(string: "http://\(ip):8000/channels/\(channel1?.channelNum ?? 0).m3u8")!))
+			player2.replaceCurrentItem(with: AVPlayerItem(url: URL(string: "http://\(ip):8000/channels/\(channel2?.channelNum ?? 0).m3u8")!))
+			player3.replaceCurrentItem(with: AVPlayerItem(url: URL(string: "http://\(ip):8000/channels/\(channel3?.channelNum ?? 0).m3u8")!))
+			player4.replaceCurrentItem(with: AVPlayerItem(url: URL(string: "http://\(ip):8000/channels/\(channel4?.channelNum ?? 0).m3u8")!))
 			
 			player1.isMuted = true
 			player2.isMuted = true

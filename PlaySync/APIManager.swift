@@ -17,6 +17,7 @@ public class APIManager {
 		"ESPN",
 		"ACC",
 		"SEC",
+        "CBS",
 		"FOX",
 		"Sports",
 		"HD",
@@ -28,8 +29,10 @@ public class APIManager {
 		"Eredivisie",
 		"Bundesliga",
 		"Premier Lacrosse League",
+        "Sport Fishing Championship",
 		"FIBA Basketball Champions League",
 		"PGA TOUR",
+        "LPGA",
 		"PLL",
 		"Fuera de Juego",
 		"MLB",
@@ -43,12 +46,16 @@ public class APIManager {
 		"Joe & Q",
 		"The Pat McAfee Show",
 		"30 for 30",
-		"EPlusTV"
+		"EPlusTV",
+        "AUSoft",
+        "football",
+        "ncaaf"
 	]
 	
 	func getChannels(success: @escaping (([Channel]) -> Void), failure: @escaping ((FailureMessage) -> Void)) {
-		
-		AF.request("http://10.0.0.4:8000/xmltv.xml", method:.get).response { response in
+        let ip = UserDefaults.standard.string(forKey: "userIP") ?? "10.0.0.4"
+        
+		AF.request("http://\(ip):8000/xmltv.xml", method:.get).response { response in
 			switch response.result {
 			case .success:
 				do {

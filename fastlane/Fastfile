@@ -1,0 +1,17 @@
+default_platform(:tvos)
+
+platform :tvos do
+    lane :beta do
+		update_fastlane
+
+		# Increment the build number (not the version number)
+		increment_build_number(xcodeproj: "PlaySync.xcodeproj")
+
+		get_certificates
+		get_provisioning_profile
+		build_app
+
+		# Upload to testflight and wait for processing
+		upload_to_testflight
+    end
+end

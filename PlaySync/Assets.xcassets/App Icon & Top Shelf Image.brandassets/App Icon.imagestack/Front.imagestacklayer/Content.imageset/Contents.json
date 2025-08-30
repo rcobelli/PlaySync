@@ -1,11 +1,12 @@
 {
   "images" : [
     {
+      "filename" : "front x1.png",
       "idiom" : "tv",
       "scale" : "1x"
     },
     {
-      "filename" : "multiplexer_input_electrical_electronic-512-4236857337.png",
+      "filename" : "front.png",
       "idiom" : "tv",
       "scale" : "2x"
     }
